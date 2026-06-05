@@ -160,7 +160,9 @@ const Footer = () => {
               <span>GitHub</span>
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/kavishka-manohara-19b071319/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="text-gray-600 dark:text-gray-400 hover:text-[#0077B5] transition-colors flex items-center gap-2 group"
             >
               <FaLinkedin className="text-2xl group-hover:scale-110 transition-transform" />
