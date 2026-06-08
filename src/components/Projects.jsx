@@ -33,7 +33,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-20 bg-gray-50 dark:bg-[#0a0a0a] transition-colors duration-500 px-4">
+    <div id="projects" className="py-20 bg-gray-50 dark:bg-[#0a0a0a] transition-colors duration-500 px-4" >
       <div className="max-w-7xl mx-auto">
         
         {/* Section Title */}

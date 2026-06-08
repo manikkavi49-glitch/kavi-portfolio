@@ -18,6 +18,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 text-gray-600 dark:text-gray-300 font-medium">
             <li><a href="#home" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Home</a></li>
+            <li><a href="#about" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">About</a></li>
             <li><a href="#projects" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Projects</a></li>
             <li><a href="#skills" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Skills</a></li>
             <li><a href="#contact" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Contact</a></li>
@@ -50,6 +51,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="md:hidden bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors duration-500">
           <ul className="flex flex-col text-gray-600 dark:text-gray-300 font-medium px-4 pt-2 pb-6 space-y-4">
             <li><a href="#home" onClick={() => setIsOpen(false)} className="block hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Home</a></li>
+            <li><a href="#about" onClick={() => setIsOpen(false)} className="block hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">About</a></li>
             <li><a href="#projects" onClick={() => setIsOpen(false)} className="block hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Projects</a></li>
             <li><a href="#skills" onClick={() => setIsOpen(false)} className="block hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Skills</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">Contact</a></li>

@@ -22,6 +22,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="py-20 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors duration-500 px-4">
+      
       <div className="max-w-7xl mx-auto">
         
         {/* Section Title */}

@@ -5,13 +5,15 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'  
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
-
+import SplashScreen from './components/SplashScreen'
+import BackgroundEffect from './components/BackgroundEffect' // අලුත් එක import කළා
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './App.css'
+import About from './components/About'
 
 function App() {
-  // Dark Mode එක සඳහා State එක (Default විදිහට True දීලා තියෙන්නේ)
+  const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
@@ -23,22 +25,23 @@ function App() {
   }, []);
 
   return (
-    // මේ ප්‍රධාන div එකෙන් තමයි මුළු website එකම Dark ද Light ද කියලා තීරණය කරන්නේ
-    <div className={darkMode ? "dark" : ""}>
-      
-      {/* Background සහ Text පාට අලුත් විදිහට (dark:bg- යොදාගෙන) */}
-      <div className="bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-white min-h-screen font-sans selection:bg-blue-500/30 cursor-none overflow-x-hidden transition-colors duration-500">
+  <div className={darkMode ? "dark" : ""}>
+    {loading ? (
+      <SplashScreen onFinish={() => setLoading(false)} />
+    ) : (
+      <div className="min-h-screen relative">
+        <BackgroundEffect />
         <CustomCursor />
-        {/* Navbar එකට අදාළ දේවල් Pass කරනවා */}
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Hero />
+        <About />
         <Projects />
         <Skills />
         <Footer />
       </div>
-
-    </div>
-  )
+    )}
+  </div>
+)
 }
 
 export default App

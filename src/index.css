@@ -5,3 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Lanyard drag cursor */
+.lanyard-grab   { cursor: grab; }
+.lanyard-grab:active { cursor: grabbing; }
